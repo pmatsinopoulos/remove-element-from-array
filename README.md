@@ -1,66 +1,17 @@
-## Foundry
+This is an example of a function that removes an array element by position.
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Here is the diagram of the deletion logic implemented:
 
-Foundry consists of:
+![Deletion Logic](./docs/deletion-logic.png)
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Development
 
-## Documentation
+This project is using [foundry](https://github.com/foundry-rs/foundry)
 
-https://book.getfoundry.sh/
+## Testing
 
-## Usage
+Run:
 
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
+```bash
 $ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
 ```
